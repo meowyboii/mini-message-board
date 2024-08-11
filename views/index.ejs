@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div>
+      <h1><%= title %></h1>
+      <% messages.map((message) => { %>
+      <p>Message: <%= message.text %></p>
+      <p>User: <%= message.user %></p>
+      <p>Date: <%= message.added %></p>
+      <hr />
+      <% }) %>
+    </div>
+  </body>
+</html>
